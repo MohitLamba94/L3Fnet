@@ -1,6 +1,6 @@
 # L3Fnet
 
-The project is the official implementation of our IEEE TIP Journal, "Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging"
+The project is the official implementation of our *IEEE TIP Journal, "Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging"*
 
 
 
