@@ -1,7 +1,7 @@
 # L3Fnet
 
 > The project is the official implementation of our *IEEE TIP Journal, "Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging"*
-> &mdash; Mohit Lamba, Kranthi Kumar, Kaushik Mitra
+> <b> &mdash; Mohit Lamba, Kranthi Kumar, Kaushik Mitra </b>
 
 
 
