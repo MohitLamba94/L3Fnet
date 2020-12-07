@@ -22,4 +22,5 @@ The proposed L3Fnet harnesses information form all the views to produce sharper 
 
 <p align="center">
   <img src="https://github.com/MohitLamba94/L3Fnet/blob/main/imgs/fig4.png">
+  <img src="https://github.com/MohitLamba94/L3Fnet/blob/main/imgs/table.png">
 </p>
