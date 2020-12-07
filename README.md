@@ -16,11 +16,10 @@ proposed method not only visually restores each of the LF views but also
 preserves the LF geometry for faithful depth estimation, as shown below.
 <p align="center">
   <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/title_fig.png">
-  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/title_fig.png">
 </p> 
 
 The proposed L3Fnet harnesses information form all the views to produce sharper and less noisy restorations. Compared to our restoration, the existing state-of-the-art methods exhibit considerable amount of noise and blurriness in their restorations. 
 
 <p align="center">
-  <img src="https://github.com/MohitLamba94/L3Fnet/blob/main/imgs/fig2.png?raw=true">
+  <img src="https://github.com/MohitLamba94/L3Fnet/blob/main/imgs/fig4.png">
 </p>
