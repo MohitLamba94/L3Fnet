@@ -41,6 +41,12 @@ The proposed L3Fnet harnesses information form all the views to produce sharper 
 
 # The L3F Dataset
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/dataset.png" height="432">
+</p>
+
+Unlike most previous works on low-light enhancement we do not simulate low-light images using Gamma correction or modifying images in Adobe Photoshop. Rather we physically capture Light Field images when the light falling on camera lens is less than 20 lux.
+
 
 
 # How to use the Code ?
