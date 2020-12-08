@@ -52,7 +52,7 @@ Unlike most previous works on low-light enhancement we do not simulate low-light
 ### L3F-20, L3-50 and L3F-100 dataset
 The dataset used for training is organized into `27 scenes`. For each scene we capture on LF for large exposure which then serves as the well-lit GT image. We then capture 3 more LFs captured at 20th, 50th and 100th fraction of the exposure used for the GT image.
 
-The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`. We thus used JPEG compressed images for training and testing and can be downloded from here. But we also additionally provide the original RAW images also, which can be downloaded from here.
+The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`. We thus used JPEG compressed images for training and testing and can be downloded from here. But we also additionally provide the original RAW images.
 
 <details>
   <summary>Click here to see the central SAIs of all the 27 scenes</summary>
@@ -71,8 +71,8 @@ The following scenes are used for TESTING.
 
 </details>
 
-
-
+### L3F-wild Dataset
+The Light Fields captured in this dataset were captured late in the night in almost <i>0</i> lux conditions. These scenes were captured with normal ISO and exposure settings as if being captured in bright sunlight in the day.The scenes in the L3F-wild dataset are so dark that no GT was possible. Thus they cannot be used for quantitative evaluation but serves as a real-life qualitative check for methods which claim low-light enhancement.
 
 
 # How to use the Code ?
