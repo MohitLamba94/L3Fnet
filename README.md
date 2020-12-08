@@ -18,9 +18,27 @@ preserves the LF geometry for faithful depth estimation, as shown below.
   <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/title_fig.png">
 </p> 
 
-The proposed L3Fnet harnesses information form all the views to produce sharper and less noisy restorations. Compared to our restoration, the existing state-of-the-art methods exhibit considerable amount of noise and blurriness in their restorations. 
+The proposed L3Fnet harnesses information form all the views to produce sharper and less noisy restorations. Compared to our restoration, the existing state-of-the-art methods exhibit considerable amount of noise and blurriness in their restorations. This is substantiated by both qualitative and PSNR/SSIM quantitative evaluations.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/fig4.png">
   <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/table.png">
 </p>
+
+
+<!---
+| |L3F-20 | L3F-50 | L3F-100 |
+|:---:|:---:|:---:|:---:|
+| LFBM5D | 24.48/0.79| 20.94/0.64| 18.14/0.46 |
+| PBS | 20.80/0.68 | 16.48/0.53 | 13.94/0.38       |
+| RetinexNet | 21.82/0.72| 18.98/0.59| 17.8/0.41 |
+| DID | 24.09/0.78| 22.63/0.68| 20.68/0.61       |
+| SGN | 24.10/0.76| 22.18/0.67| 20.70/0.59       |
+| SID | 24.53/0.76| 22.87/0.66| 20.75/0.58       |
+| Our L3Fnet| 25.25/0.82| 23.67/0.74| 22.61/0.70     |
+--->
+
+
+
+
+
