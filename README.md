@@ -21,9 +21,11 @@ To facilitate learning-based techniques for low-light LF imaging, we collected a
 Low-light is a severe bottleneck to Light Field applications.
 For example, the depth estimate of LF captured in low light is very poor. Our
 proposed method not only visually restores each of the LF views but also
-preserves the LF geometry for faithful depth estimation, as shown below.
+preserves the LF geometry for faithful depth estimation, as shown below (<i> Click to see full resolution image </i>).
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/title_fig.png">
+  <a href="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/title_fig.png">
+  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/title_fig.png" alt="Click to expand full res image" height="432">
+  </a>
 </p> 
 
 The proposed L3Fnet harnesses information form all the views to produce sharper and less noisy restorations. Compared to our restoration, the existing state-of-the-art methods exhibit considerable amount of noise and blurriness in their restorations. This is substantiated by both qualitative and PSNR/SSIM quantitative evaluations.
