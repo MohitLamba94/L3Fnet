@@ -27,6 +27,9 @@ preserves the LF geometry for faithful depth estimation, as shown below (*Click 
   </a>
 </p> 
 
+<details>
+  <summary>Click to see more <i>Results</i> !</summary>
+
 The proposed L3Fnet harnesses information form all the views to produce sharper and less noisy restorations. Compared to our restoration, the existing state-of-the-art methods exhibit considerable amount of noise and blurriness in their restorations. This is substantiated by both qualitative and PSNR/SSIM quantitative evaluations.
 
 <p align="center">
@@ -34,6 +37,10 @@ The proposed L3Fnet harnesses information form all the views to produce sharper 
   <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/table.png">
   <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/depth.jpg">
 </p>
+
+</details>
+
+# The dataset
 
 
 <!---
