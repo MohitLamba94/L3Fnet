@@ -42,10 +42,26 @@ The proposed L3Fnet harnesses information form all the views to produce sharper 
 # The L3F Dataset
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/dataset.png" height="432">
+  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/dataset.png" height="332">
 </p>
 
-Unlike most previous works on low-light enhancement we do not simulate low-light images using Gamma correction or modifying images in Adobe Photoshop. Rather we physically capture Light Field images when the light falling on camera lens is less than 20 lux.
+Unlike most previous works on low-light enhancement we do not simulate low-light images using Gamma correction or modifying images in Adobe Photoshop. Rather we physically capture Light Field images when the light falling on camera lens is in between 0-20 lux.
+
+## L3F-20, L3-50 and L3F-100 dataset
+The dataset used for training is organized into 27 scenes. For each scene we capture on LF for large exposure which then serves as the well-lit GT image. We then capture 3 more LFs captured at 20th, 50th and 100th fraction of the exposure used for the GT image.
+
+<details>
+  <summary>Click here to see the central SAIs of all the 27 scenes</summary>
+
+The following scenes are used for training.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/train.png">
+</p>
+
+</details>
+
+
 
 
 
