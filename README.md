@@ -4,15 +4,15 @@
 
 ***A single PDF of the paper and the supplementary is available at [arXiv.org](https://arxiv.org/abs/2003.02438).***
 
-Light Field (LF) offers unique advantages such as post-capture refocusing and depth estimation, but low-light conditions, especially during night, severely limit these capabilities. We, therefore, propose a deep neural network architecture for *Low-Light Light Field (L3F)* restoration, which we refer to as ***L3Fnet***. The proposed L3Fnet not only performs the necessary visual enhancement of each LF view but also preserves the epipolar geometry across views. To facilitate this learning-based solution for low-light LF imaging, we collected a comprehensive LF dataset called ***L3F-dataset***. Both our code and the L3F dataset are now publicly available and can be downloaded using the links provided on the left. 
+Light Field (LF) offers unique advantages such as post-capture refocusing and depth estimation, but low-light conditions, especially during night, severely limit these capabilities. We, therefore, propose a deep neural network architecture for ***Low-Light Light Field (L3F)*** restoration, which we refer to as `L3Fnet`. The proposed L3Fnet not only performs the necessary visual enhancement of each LF view but also preserves the epipolar geometry across views. To facilitate this learning-based solution for low-light LF imaging, we collected a comprehensive LF dataset called `L3F-dataset`. Both our code and the L3F dataset are now publicly available and can be downloaded using the links provided on the left. 
 
 <details>
   <summary>Click to read full <i>Abstract</i> !</summary>
   
 <p> Light Field (LF) offers unique advantages such as post-capture refocusing and depth estimation, but low-light conditions severely limit these capabilities.
-To restore low-light LFs we should harness the geometric cues present in different LF views, which is not possible using single-frame low-light enhancement techniques. We, therefore, propose a deep neural network architecture for Low-Light Light Field (L3F) restoration, which we refer to as <b> L3Fnet </b>. The proposed L3Fnet not only performs the necessary visual enhancement of each LF view but also preserves the epipolar geometry across views. We achieve this by adopting a two-stage architecture for L3Fnet. Stage-I looks at all the LF views to encode the LF geometry. This encoded information is then used in Stage-II to reconstruct each LF view. <br>
+To restore low-light LFs we should harness the geometric cues present in different LF views, which is not possible using single-frame low-light enhancement techniques. We, therefore, propose a deep neural network architecture for Low-Light Light Field (L3F) restoration, which we refer to as `L3Fnet`. The proposed L3Fnet not only performs the necessary visual enhancement of each LF view but also preserves the epipolar geometry across views. We achieve this by adopting a two-stage architecture for L3Fnet. Stage-I looks at all the LF views to encode the LF geometry. This encoded information is then used in Stage-II to reconstruct each LF view. <br>
 
-To facilitate learning-based techniques for low-light LF imaging, we collected a comprehensive LF dataset of various scenes. For each scene, we captured four LFs, one with near-optimal exposure and ISO settings and the others at different levels of low-light conditions varying from low to extreme low-light settings. The effectiveness of the proposed L3Fnet is supported by both visual and numerical comparisons on this dataset. To further analyze the performance of low-light reconstruction methods, we also propose an <b> L3F-wild dataset </b> that contains LF captured late at night with almost zero lux values. No ground truth is available in this dataset. To perform well on the L3F-wild dataset, any method must adapt to the light level of the captured scene. To do this we use a pre-processing block that makes L3Fnet robust to various degrees of low-light conditions. Lastly, we show that L3Fnet can also be used for low-light enhancement of single-frame images, despite it being engineered for LF data. We do so by converting the single-frame DSLR image into a form suitable to L3Fnet, which we call as pseudo-LF. </p> 
+To facilitate learning-based techniques for low-light LF imaging, we collected a comprehensive LF dataset of various scenes. For each scene, we captured four LFs, one with near-optimal exposure and ISO settings and the others at different levels of low-light conditions varying from low to extreme low-light settings. The effectiveness of the proposed L3Fnet is supported by both visual and numerical comparisons on this dataset. To further analyze the performance of low-light reconstruction methods, we also propose an `L3F-wild dataset` that contains LF captured late at night with almost zero lux values. No ground truth is available in this dataset. To perform well on the L3F-wild dataset, any method must adapt to the light level of the captured scene. To do this we use a pre-processing block that makes L3Fnet robust to various degrees of low-light conditions. Lastly, we show that L3Fnet can also be used for low-light enhancement of single-frame images, despite it being engineered for LF data. We do so by converting the single-frame DSLR image into a form suitable to L3Fnet, which we call as `pseudo-LF`. </p> 
  
 </details>
 
@@ -48,7 +48,7 @@ The proposed L3Fnet harnesses information form all the views to produce sharper 
 Unlike most previous works on low-light enhancement we do not simulate low-light images using Gamma correction or modifying images in Adobe Photoshop. Rather we physically capture Light Field images when the light falling on camera lens is in between 0-20 lux.
 
 ## L3F-20, L3-50 and L3F-100 dataset
-The dataset used for training is organized into 27 scenes. For each scene we capture on LF for large exposure which then serves as the well-lit GT image. We then capture 3 more LFs captured at 20th, 50th and 100th fraction of the exposure used for the GT image.
+The dataset used for training is organized into `27 scenes`. For each scene we capture on LF for large exposure which then serves as the well-lit GT image. We then capture 3 more LFs captured at 20th, 50th and 100th fraction of the exposure used for the GT image.
 
 <details>
   <summary>Click here to see the central SAIs of all the 27 scenes</summary>
@@ -67,7 +67,7 @@ The following scenes are used for TESTING.
 
 </details>
 
-The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`.
+The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`. We thus used JPEG compressed images for training and testing and can be downloded from here. But we also additionally provide the original RAW images also, which can be downloaded from here.
 
 
 
