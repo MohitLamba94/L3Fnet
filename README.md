@@ -55,7 +55,7 @@ The dataset used for training is organized into `27 scenes`. For each scene we c
 The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`. We thus used JPEG compressed images for training and testing and can be downloded from here. But we also additionally provide the original RAW images.
 
 <details>
-  <summary>Click here to see the central SAIs of all the 27 scenes</summary>
+  <summary>Click here to see the central SAIs of all the <i>27 scenes ! </i> </summary>
 
 The following scenes are used for TRAINING.
 
@@ -73,6 +73,15 @@ The following scenes are used for TESTING.
 
 ### L3F-wild Dataset
 The Light Fields captured in this dataset were captured late in the night in almost <i>0</i> lux conditions. These scenes were captured with normal ISO and exposure settings as if being captured in bright sunlight in the day.The scenes in the L3F-wild dataset are so dark that no GT was possible. Thus they cannot be used for quantitative evaluation but serves as a real-life qualitative check for methods which claim low-light enhancement.
+
+<details>
+  <summary>Click here to see the <i>SAIs restored by our L3Fnet ! </i> </summary>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/wild.png">
+</p>
+
+</details>
 
 
 # How to use the Code ?
