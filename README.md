@@ -49,8 +49,10 @@ The proposed L3Fnet harnesses information form all the views to produce sharper 
 
 Unlike most previous works on low-light enhancement we do not simulate low-light images using Gamma correction or modifying images in Adobe Photoshop. Rather we physically capture Light Field images when the light falling on camera lens is in between 0-20 lux.
 
-## L3F-20, L3-50 and L3F-100 dataset
+### L3F-20, L3-50 and L3F-100 dataset
 The dataset used for training is organized into `27 scenes`. For each scene we capture on LF for large exposure which then serves as the well-lit GT image. We then capture 3 more LFs captured at 20th, 50th and 100th fraction of the exposure used for the GT image.
+
+The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`. We thus used JPEG compressed images for training and testing and can be downloded from here. But we also additionally provide the original RAW images also, which can be downloaded from here.
 
 <details>
   <summary>Click here to see the central SAIs of all the 27 scenes</summary>
@@ -68,9 +70,6 @@ The following scenes are used for TESTING.
 </p>
 
 </details>
-
-
-The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`. We thus used JPEG compressed images for training and testing and can be downloded from here. But we also additionally provide the original RAW images also, which can be downloaded from here.
 
 
 
