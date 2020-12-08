@@ -78,7 +78,7 @@ The Light Fields captured in this dataset were captured late in the night in alm
   <summary>Click here to see the <i>SAIs restored by our L3Fnet ! </i> </summary>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/wild.png">
+  <br> <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/wild.png">
 </p>
 
 </details>
