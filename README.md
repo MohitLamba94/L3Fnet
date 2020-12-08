@@ -53,13 +53,21 @@ The dataset used for training is organized into 27 scenes. For each scene we cap
 <details>
   <summary>Click here to see the central SAIs of all the 27 scenes</summary>
 
-The following scenes are used for training.
+The following scenes are used for TRAINING.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/train.png">
 </p>
 
+The following scenes are used for TESTING.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/test.png">
+</p>
+
 </details>
+
+The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`.
 
 
 
