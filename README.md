@@ -4,12 +4,9 @@
 
 ***A single PDF of the paper and the supplementary is available at [arXiv.org](https://arxiv.org/abs/2003.02438).***
 
-```
-Some code goes here
-
-```
-
-Light Field (LF) offers unique advantages such as post-capture refocusing and depth estimation, but low-light conditions, especially during night, severely limit these capabilities. We, therefore, propose a deep neural network architecture for ***Low-Light Light Field (L3F)*** restoration, which we refer to as ```L3Fnet```. The proposed L3Fnet not only performs the necessary visual enhancement of each LF view but also preserves the epipolar geometry across views. To facilitate this learning-based solution for low-light LF imaging, we collected a comprehensive LF dataset called `L3F-dataset`. Both our code and the L3F dataset are now publicly available and can be downloaded using the links provided on the left. 
+Light Field (LF) offers unique advantages such as post-capture refocusing and depth estimation, but low-light conditions, especially during night, severely limit these capabilities. We, therefore, propose a deep neural network architecture for ***Low-Light Light Field (L3F)*** restoration, which we refer to as
+`L3Fnet`
+. The proposed L3Fnet not only performs the necessary visual enhancement of each LF view but also preserves the epipolar geometry across views. To facilitate this learning-based solution for low-light LF imaging, we collected a comprehensive LF dataset called `L3F-dataset`. Both our code and the L3F dataset are now publicly available and can be downloaded using the links provided on the left. 
 
 <details>
   <summary>Click to read full <i>Abstract</i> !</summary>
@@ -71,6 +68,7 @@ The following scenes are used for TESTING.
 </p>
 
 </details>
+
 
 The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`. We thus used JPEG compressed images for training and testing and can be downloded from here. But we also additionally provide the original RAW images also, which can be downloaded from here.
 
