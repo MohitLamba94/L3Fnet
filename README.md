@@ -4,22 +4,19 @@
 
 ***A single PDF of the paper and the supplementary is available at [arXiv.org](https://arxiv.org/abs/2003.02438).***
 
-Light Field (LF) offers unique advantages such as post-capture refocusing and depth estimation, but low-light conditions, especially during night, severely limit these capabilities. We, therefore, propose a deep neural network architecture for ***Low-Light Light Field (L3F)*** restoration, which we refer to as
-`L3Fnet`
-. The proposed L3Fnet not only performs the necessary visual enhancement of each LF view but also preserves the epipolar geometry across views. To facilitate this learning-based solution for low-light LF imaging, we collected a comprehensive LF dataset called `L3F-dataset`. Both our code and the L3F dataset are now publicly available and can be downloaded using the links provided on the left. 
+Light Field (LF) offers unique advantages such as post-capture refocusing and depth estimation, but low-light conditions, especially during night, severely limit these capabilities. We, therefore, propose a deep neural network architecture for ***Low-Light Light Field (L3F)*** restoration, which we call `L3Fnet`. The proposed L3Fnet not only performs the necessary visual enhancement of each LF view but also preserves the epipolar geometry across views. To facilitate learning-based solution for low-light LF imaging, we also collected a comprehensive LF dataset called `L3F-dataset`. Both our code and the L3F dataset are now publicly available and can be downloaded from Google Drive. 
 
 <details>
   <summary>Click to read full <i>Abstract</i> !</summary>
   
 <p> Light Field (LF) offers unique advantages such as post-capture refocusing and depth estimation, but low-light conditions severely limit these capabilities.
 To restore low-light LFs we should harness the geometric cues present in different LF views, which is not possible using single-frame low-light enhancement techniques. We, therefore, propose a deep neural network architecture for Low-Light Light Field (L3F) restoration, which we refer to as <code>L3Fnet</code>. The proposed L3Fnet not only performs the necessary visual enhancement of each LF view but also preserves the epipolar geometry across views. We achieve this by adopting a two-stage architecture for L3Fnet. Stage-I looks at all the LF views to encode the LF geometry. This encoded information is then used in Stage-II to reconstruct each LF view. <br>
-
 To facilitate learning-based techniques for low-light LF imaging, we collected a comprehensive LF dataset of various scenes. For each scene, we captured four LFs, one with near-optimal exposure and ISO settings and the others at different levels of low-light conditions varying from low to extreme low-light settings. The effectiveness of the proposed L3Fnet is supported by both visual and numerical comparisons on this dataset. To further analyze the performance of low-light reconstruction methods, we also propose an <code>L3F-wild dataset</code> that contains LF captured late at night with almost zero lux values. No ground truth is available in this dataset. To perform well on the L3F-wild dataset, any method must adapt to the light level of the captured scene. To do this we use a pre-processing block that makes L3Fnet robust to various degrees of low-light conditions. Lastly, we show that L3Fnet can also be used for low-light enhancement of single-frame images, despite it being engineered for LF data. We do so by converting the single-frame DSLR image into a form suitable to L3Fnet, which we call as <code>pseudo-LF</code>. </p> 
  
 </details>
 
 # Sample Output
-Low-light is a severe bottleneck to Light Field applications.
+Low-light conditions are a big challenge to Light Field applications.
 For example, the depth estimate of LF captured in low light is very poor. Our
 proposed method not only visually restores each of the LF views but also
 preserves the LF geometry for faithful depth estimation, as shown below (*Click to see full resolution image*).
@@ -73,7 +70,7 @@ The following scenes are used for TESTING.
 </details>
 
 ### L3F-wild Dataset
-The Light Fields captured in this dataset were captured late in the night in almost <i>0</i> lux conditions. These scenes were captured with normal ISO and exposure settings as if being captured in bright sunlight in the day.The scenes in the L3F-wild dataset are so dark that no GT was possible. Thus they cannot be used for quantitative evaluation but serves as a real-life qualitative check for methods which claim low-light enhancement.
+The Light Fields captured in this dataset were captured late in the night in almost <i>0 lux</i> conditions. These scenes were captured with normal ISO and exposure settings as if being captured in bright sunlight in the day. The scenes in the L3F-wild dataset are so dark that no GT was possible. Thus they cannot be used for quantitative evaluation but serves as a real-life qualitative check for methods which claim low-light enhancement.
 
 <details>
   <summary>Click here to see the <i>SAIs restored by our L3Fnet ! </i> </summary>
@@ -112,7 +109,7 @@ The Light Fields captured in this dataset were captured late in the night in alm
 </pre>
 </div>
 
-Here <code>jpeg</code> refers to the decoded LF `.jpeg` used for training and testing <code>L3Fnet</code>. The well-illuminated GT images are present in the directory <code>1</code> and the other folders contain the low-light LF images with reduced exposure. The <code>raw</code> folder contains the raw <code>.LFR</code> files captured by Lytro Illum. The corresponding raw and .jpeg files have the same file names.
+The <code>jpeg</code> directory contains the decoded LF in `.jpeg` format and were used for training and testing <code>L3Fnet</code>. The well-illuminated GT images are present in the directory called <code>1</code> and the other folders contain the low-light LF images with reduced exposure. The original undecoded raw files captured by Lytro Illum can be found in the <code>raw</code> folder. The corresponding raw and .jpeg files have the same file names.
 
 To find the well-lit and low-light image pairs, alphabetically sort the directories by file name. The images are then matched by the same serial number. An example for the <code>L3F-100</code> datset is shown below,
 
