@@ -132,6 +132,13 @@ The training and the testing code for <code>L3Fnet</code> is provided by <code>t
 
 # Cite us
 
+@inproceedings{l3fnet,
+  title={Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging},
+  author={Lamba, Mohit and Kumar, Kranthi and Mitra, Kaushik},
+  booktitle={IEEE Transactions on image processing},
+  year={20xx}
+}
+
 
 <!---
 | |L3F-20 | L3F-50 | L3F-100 |
