@@ -87,7 +87,7 @@ The Light Fields captured in this dataset were captured late in the night in alm
 # How to use the Code ? (The code will be made available soon ...)
 The L3F code and dataset is arranged as below,
 
-<div style="width:400px;overflow:auto;padding-left:100px;">
+<div style="width:300px;overflow:auto;padding-left:200px;">
 <pre>
   ./L3F
   ├── L3F-dataset
