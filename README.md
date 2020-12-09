@@ -112,6 +112,25 @@ The L3F code and dataset is arranged as below,
 
 Here <code>jpeg</code> refers to the decoded LF `.jpeg` used for training and testing <code>L3Fnet</code>. The well-illuminated GT images are present in the directory <code>1</code> and the other folders contain the low-light LF images with reduced exposure. The <code>raw</code> folder contains the raw <code>.LFR</code> files captured by Lytro Illum. The corresponding raw and .jpeg files have the same file names.
 
+To find the well-lit and low-light image pairs, alphabetically sort the directories by file name. The images are then matched by the same serial number. An example for the <code>L3F-100</code> datset is shown below,
+
+<div style="width:600px;overflow:auto;padding-left:50px;">
+<pre>
+  import os
+  from PIL import Image
+  
+  GT_files = sorted(os.walk(os.path.join('L3F/L3F-dataset/jpeg/test/1')))
+  LowLight_files = sorted(os.walk(os.path.join('L3F/L3F-dataset/jpeg/test/1_100')))
+  
+  GT_image = Image.open(os.path.join(GT_files[idx])).convert('RGB')
+  LowLight_image = Image.open(os.path.join(LowLight_files[idx])).convert('RGB')
+  
+  
+</pre>
+</div>
+
+
+
 # Cite us
 
 
