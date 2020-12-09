@@ -148,7 +148,7 @@ hr {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 750px;
   padding: 5px;
   margin: 10px 0 32px 0;
   border: 1px solid #ccc;
@@ -216,7 +216,7 @@ td {
 
 /* Wrapper */
 .wrapper {
-  width:960px;
+  width:1060px;
 }
 
 
@@ -235,7 +235,7 @@ header {
 	-moz-border-radius-bottomright: 4px;
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
-	padding: 34px 25px 22px 50px;
+	padding: 34px 25px 22px 34px;
 	margin: 30px 25px 0 0;
 	-webkit-font-smoothing: antialiased;
 }
@@ -329,7 +329,7 @@ a.buttons:hover {
 /* Section - for main page content */
 
 section {
-  width:650px;
+  width:750px;
   float:right;
   padding-bottom:50px;
 }
@@ -348,7 +348,7 @@ footer {
 	padding-left: 50px;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 1060px) {
 
   div.wrapper {
     width:auto;
@@ -363,7 +363,7 @@ footer {
 
 	footer {
 		border-top: 1px solid #ccc;
-		margin:0 84px 0 50px;
+		margin:0 84px 0 20px;
 		padding:0;
 	}
 
@@ -387,7 +387,7 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 820px) {
   body {
     word-wrap:break-word;
   }
@@ -403,7 +403,7 @@ footer {
   }
 
 	footer {
-		margin: 0 0 0 30px;
+		margin: 0 0 0 10px;
 	}
 
   header ul, header p.view {
@@ -418,7 +418,7 @@ footer {
   }
 
 	footer {
-		margin: 0 0 0 20px;
+		margin: 0 0 0 10px;
 	}
 
 	footer a{
