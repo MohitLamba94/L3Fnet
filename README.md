@@ -132,12 +132,18 @@ The training and the testing code for <code>L3Fnet</code> is provided by <code>t
 
 # Cite us
 
-@inproceedings{l3fnet,
+<div style="width:600px;overflow:auto;padding-left:50px;">
+<pre>
+  @inproceedings{l3fnet,
   title={Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging},
   author={Lamba, Mohit and Kumar, Kranthi and Mitra, Kaushik},
   booktitle={IEEE Transactions on image processing},
   year={20xx}
 }
+</pre>
+</div>
+
+
 
 
 <!---
