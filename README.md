@@ -119,11 +119,11 @@ To find the well-lit and low-light image pairs, alphabetically sort the director
   import os
   from PIL import Image
   
-  GT_files = sorted(os.walk(os.path.join('L3F/L3F-dataset/jpeg/test/1')))
-  LowLight_files = sorted(os.walk(os.path.join('L3F/L3F-dataset/jpeg/test/1_100')))
+  GT_files = sorted(os.walk('L3F/L3F-dataset/jpeg/test/1'))
+  LowLight_files = sorted(os.walk('L3F/L3F-dataset/jpeg/test/1_100'))
   
-  GT_image = Image.open(os.path.join(GT_files[idx])).convert('RGB')
-  LowLight_image = Image.open(os.path.join(LowLight_files[idx])).convert('RGB')
+  GT_image = Image.open(GT_files[idx]).convert('RGB')
+  LowLight_image = Image.open(LowLight_files[idx]).convert('RGB')
   
   
 </pre>
