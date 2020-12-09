@@ -110,6 +110,8 @@ The L3F code and dataset is arranged as below,
 </pre>
 </div>
 
+Here <code>jpeg</code> refers to the decoded LF `.jpeg` used for training and testing <code>L3Fnet</code>. The well-illuminated GT images are present in the directory <code>1</code> and the other folders contain the low-light LF images with reduced exposure.
+
 # Cite us
 
 
