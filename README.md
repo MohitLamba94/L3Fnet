@@ -1,4 +1,4 @@
-# Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging
+# Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging 
 
 > The project is the official implementation of our *IEEE TIP Journal, "Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging"*<br>  **&mdash; Mohit Lamba, Kranthi Kumar Rachavarapu, Kaushik Mitra**
 
@@ -84,7 +84,7 @@ The Light Fields captured in this dataset were captured late in the night in alm
 </details>
 
 
-# How to use the Code ?
+# How to use the Code ? (The code will be made available soon ...)
 The L3F code and dataset is arranged as below,
 
 <div style="width:400px;overflow:auto;padding-left:100px;">
