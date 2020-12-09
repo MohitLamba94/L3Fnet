@@ -124,12 +124,10 @@ To find the well-lit and low-light image pairs, alphabetically sort the director
   
   GT_image = Image.open(GT_files[idx]).convert('RGB')
   LowLight_image = Image.open(LowLight_files[idx]).convert('RGB')
-  
-  
 </pre>
 </div>
 
-
+The training and the testing code for <code>L3Fnet</code> is provided by <code>train.ipynb</code> and <code>test.ipynb</code> Jupyter files. 
 
 # Cite us
 
