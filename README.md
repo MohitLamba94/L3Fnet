@@ -87,7 +87,7 @@ The Light Fields captured in this dataset were captured late in the night in alm
 # How to use the Code ?
 The L3F code and dataset is arranged as below,
 
-<div style="width:400px;overflow:auto;text-align:center;">
+<div style="width:400px;overflow:auto;" align="center">
 <pre>
   ./L3F
   ├── L3F-dataset
@@ -110,7 +110,7 @@ The L3F code and dataset is arranged as below,
 </pre>
 </div>
 
-Here <code>jpeg</code> refers to the decoded LF `.jpeg` used for training and testing <code>L3Fnet</code>. The well-illuminated GT images are present in the directory <code>1</code> and the other folders contain the low-light LF images with reduced exposure.
+Here <code>jpeg</code> refers to the decoded LF `.jpeg` used for training and testing <code>L3Fnet</code>. The well-illuminated GT images are present in the directory <code>1</code> and the other folders contain the low-light LF images with reduced exposure. The <code>raw</code> folder contains the raw <code>.LFR</code> files captured by Lytro Illum. The corresponding raw and .jpeg files have the same file names.
 
 # Cite us
 
