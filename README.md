@@ -114,24 +114,6 @@ The Light Fields captured in this dataset were captured late in the night in alm
 │           └── 1_50
 ├── L3Fnet
 │   ├── expected_output_images
-│   │   ├── 1_IMG_GT.png
-│   │   ├── 1_IMG_PRED.png
-│   │   ├── 2_IMG_GT.png
-│   │   ├── 2_IMG_PRED.png
-│   │   ├── 3_IMG_GT.png
-│   │   ├── 3_IMG_PRED.png
-│   │   ├── 4_IMG_GT.png
-│   │   ├── 4_IMG_PRED.png
-│   │   ├── 5_IMG_GT.png
-│   │   ├── 5_IMG_PRED.png
-│   │   ├── 6_IMG_GT.png
-│   │   ├── 6_IMG_PRED.png
-│   │   ├── 7_IMG_GT.png
-│   │   ├── 7_IMG_PRED.png
-│   │   ├── 8_IMG_GT.png
-│   │   ├── 8_IMG_PRED.png
-│   │   ├── 9_IMG_GT.png
-│   │   └── 9_IMG_PRED.png
 │   ├── test.py
 │   ├── train.ipynb
 │   └── weights
