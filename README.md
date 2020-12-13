@@ -142,8 +142,11 @@ To find the well-lit and low-light image pairs, alphabetically sort the director
 
 The code for L3F-net can be found in `L3F-net` directory. Execute `demo_cum_test.py` file for a quick demo. This file restores the dark images present in the `L3F-100` dataset. The expected output images after excuting this file are given in `expected_output_images` directory. To successfully execute this file you need to set the following variables.
 
-- `ll:` fdc
-- l lj
+- `LowLight_dir:` path/to/L3F-100/jpeg/folder
+- `GT_dir:` path/to/L3F-1/jpeg/folder
+- `GPU:` Make this flag `false` to execute the file on CPU.
+
+L3F-net can selectively restore SAIs. As restoring all 64 SAIs takes a lot of computation and so in this file we restore only two SAIs to save computation. If you wish to restore more number of SAIs, simply include the desired SAIs index in the `choice` variable present towards the end of data loader. 
 
 # Cite us
 
