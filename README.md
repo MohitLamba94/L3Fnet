@@ -146,7 +146,9 @@ The code for L3F-net can be found in `L3F-net` directory. Execute `demo_cum_test
 - `GT_dir:` path/to/L3F-1/jpeg/folder
 - `GPU:` Make this flag `false` to execute the file on CPU.
 
-L3F-net can selectively restore SAIs. As restoring all 64 SAIs takes a lot of computation and so in this file we restore only two SAIs to save computation. If you wish to restore more number of SAIs, simply include the desired SAIs index in the `choice` variable present towards the end of data loader. 
+L3F-net can selectively restore SAIs. As restoring all 64 SAIs takes a lot of computation and so in this file we restore only two SAIs to save computation. If you wish to restore more number of SAIs, simply include the desired SAIs index in the `choice` variable present towards the end of the data loader. 
+
+The training code for L3Fnet is same as outlined in the `demo_cum_test.py` file except that during training we additonally do data augmentation and use loss functions for training. Data augmentation can be achieved by making the corresponding flags `True` in the `demo_cum_test.py` code. Please follow the comments in this file to locate them. Also the code for different loss functions used in this work are already publicly availabe and are straightforward to include. Still, for your reference we provide the original Jupyter file `train.ipynb` used for training. This file requires some cleanup, such as chaing the paths, before it can be used in your workstation.
 
 # Cite us
 
