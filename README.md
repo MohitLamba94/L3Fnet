@@ -140,7 +140,10 @@ To find the well-lit and low-light image pairs, alphabetically sort the director
 </pre>
 </div>
 
-The code for L3F-net can be found in `L3F-net` directory. Execute `demo_cum_test.py` file for test the code. The expected output images after excuting this file is are given in `expected_output_images` directory. 
+The code for L3F-net can be found in `L3F-net` directory. Execute `demo_cum_test.py` file for a quick demo. This file restores the dark images present in the `L3F-100` dataset. The expected output images after excuting this file are given in `expected_output_images` directory. To successfully execute this file you need to set the following variables.
+
+- `ll:` fdc
+- l lj
 
 # Cite us
 
