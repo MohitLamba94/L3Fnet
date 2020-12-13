@@ -48,9 +48,9 @@ The proposed L3Fnet harnesses information form all the views to produce sharper 
 Unlike most previous works on low-light enhancement we do not simulate low-light images using Gamma correction or modifying images in Adobe Photoshop. Rather we physically capture Light Field images when the light falling on camera lens is in between 0-20 lux.
 
 ### L3F-20, L3-50 and L3F-100 dataset
-The dataset used for training is organized into `27 scenes`. For each scene we capture on LF for large exposure which then serves as the well-lit GT image. We then capture 3 more LFs captured at 20th, 50th and 100th fraction of the exposure used for the GT image.
+The L3F-dataset used for training and testing comprises of `27 scenes`. For each scene we capture one LF with large exposure which then serves as the well-lit GT image. We then capture 3 more LFs captured at 20th, 50th and 100th fraction of the exposure used for the GT image. A detailed descrition of the collected dataset can be found in ***Section III*** of the main paper.
 
-The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`. We thus used JPEG compressed images for training and testing and can be downloded from here. But we also additionally provide the original RAW images.
+The RAW format used by Lytro Illum is very large (400 - 500 MB) and requires several post-processing such as hexagonal to rectilinear transformation before it can be used by `L3Fnet`. We thus used JPEG compressed images for training and testing. Even after compression each LF is abour 50 MB is size; much larger than even raw DSLR image. Although we do not use raw LF images in this work, we also make the raw LF images public.
 
 <details>
   <summary>Click here to see the central SAIs of all the <i>27 scenes ! </i> </summary>
@@ -70,7 +70,7 @@ The following scenes are used for TESTING.
 </details>
 
 ### L3F-wild Dataset
-The Light Fields captured in this dataset were captured late in the night in almost <i>0 lux</i> conditions. These scenes were captured with normal ISO and exposure settings as if being captured in bright sunlight in the day. The scenes in the L3F-wild dataset are so dark that no GT was possible. Thus they cannot be used for quantitative evaluation but serves as a real-life qualitative check for methods which claim low-light enhancement.
+The Light Fields captured in this dataset were captured late in the night in almost ***0 lux*** conditions. These scenes were captured with normal ISO and exposure settings as if being captured in bright sunlight in the day. The scenes in the L3F-wild dataset are so dark that no GT was possible. Thus they cannot be used for quantitative evaluation but serves as a real-life qualitative check for methods which claim low-light enhancement.
 
 <details>
   <summary>Click here to see the <i>SAIs restored by our L3Fnet ! </i> </summary>
@@ -84,7 +84,7 @@ The Light Fields captured in this dataset were captured late in the night in alm
 
 # How to use the Code ?
 
-(The code will be made available soon ...)The L3F code and dataset is arranged as below,
+The L3F code and dataset is arranged as below,
 
 <div style="width:300px;overflow:auto;padding-left:200px;">
 <pre>
@@ -114,7 +114,7 @@ The Light Fields captured in this dataset were captured late in the night in alm
 │           └── 1_50
 ├── L3Fnet
 │   ├── expected_output_images
-│   ├── test.py
+│   ├── demo_cum_test.py
 │   ├── train.ipynb
 │   └── weights
 └── L3F-wild
@@ -123,7 +123,7 @@ The Light Fields captured in this dataset were captured late in the night in alm
 </pre>
 </div>
 
-The <code>jpeg</code> directory contains the decoded LF in `.jpeg` format and were used for training and testing <code>L3Fnet</code>. The well-illuminated GT images are present in the directory called <code>1</code> and the other folders contain the low-light LF images with reduced exposure. The original undecoded raw files captured by Lytro Illum can be found in the <code>raw</code> folder. The corresponding raw and .jpeg files have the same file names.
+The <code>jpeg</code> directory contains the decoded LF in `.jpeg` format and were used in this work. The well-illuminated GT images are present in the directory called <code>1</code> and the other folders, namely `1_20`, `1_50` and `1_100` contain the low-light LF images with reduced exposure. The original undecoded raw files captured by Lytro Illum can be found in the <code>raw</code> directory. The corresponding raw and .jpeg files have the same file names.
 
 To find the well-lit and low-light image pairs, alphabetically sort the directories by file name. The images are then matched by the same serial number. An example for the <code>L3F-100</code> datset is shown below,
 
@@ -140,7 +140,7 @@ To find the well-lit and low-light image pairs, alphabetically sort the director
 </pre>
 </div>
 
-The training and the testing code for <code>L3Fnet</code> is provided by <code>train.ipynb</code> and <code>test.ipynb</code> Jupyter files. 
+The code for L3F-net can be found in `L3F-net` directory. Execute `demo_cum_test.py` file for test the code. The expected output images after excuting this file is are given in `expected_output_images` directory. 
 
 # Cite us
 
