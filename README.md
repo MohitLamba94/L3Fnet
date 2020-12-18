@@ -1,6 +1,6 @@
 # Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging 
 
-> The project is the official implementation of our *IEEE TIP Journal, "Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging"*<br>  **&mdash; Mohit Lamba, Kranthi Kumar Rachavarapu, Kaushik Mitra**
+> The project is the official implementation of our *IEEE TIP Journal, "Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging"*<br>  **&mdash; [Mohit Lamba](https://mohitlamba94.github.io/about-me/), Kranthi Kumar Rachavarapu, Kaushik Mitra**
 
 ***A single PDF of the paper and the supplementary is available at [arXiv.org](https://arxiv.org/abs/2003.02438).***
 
