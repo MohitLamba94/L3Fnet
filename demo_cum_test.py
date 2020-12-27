@@ -306,7 +306,7 @@ class common_functions():
         plot_out_GT = (np.clip(minmaxnormalize,0,1)*255).astype(np.uint8)
         
         
-        # Save images
+        # Save images use MATLAB for PSNR and SSIM
         imageio.imwrite('{}_IMG_PRED.png'.format(self.count),plot_out_pred)
         imageio.imwrite('{}_IMG_GT.png'.format(self.count),plot_out_GT)
             
