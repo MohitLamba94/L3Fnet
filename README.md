@@ -1,6 +1,6 @@
 # Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging 
 
-> The project is the official implementation of our *IEEE TIP Journal, "Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging"*<br>  **&mdash; [Mohit Lamba](https://mohitlamba94.github.io/about-me/), Kranthi Kumar Rachavarapu, Kaushik Mitra**
+> The project is the official implementation of our *[IEEE TIP Journal](https://ieeexplore.ieee.org/document/9305989), "Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging"*<br>  **&mdash; [Mohit Lamba](https://mohitlamba94.github.io/about-me/), Kranthi Kumar Rachavarapu, Kaushik Mitra**
 
 ***A single PDF of the paper and the supplementary is available at [arXiv.org](https://arxiv.org/abs/2003.02438).***
 
@@ -156,12 +156,14 @@ The code for L3Fnet was written using `PyTorch 1.3.1` and `Python 3.7` running o
 
 <div style="width:600px;overflow:auto;padding-left:50px;">
 <pre>
-  @inproceedings{l3fnet,
-  title={Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging},
-  author={Lamba, Mohit and Kumar, Kranthi and Mitra, Kaushik},
-  booktitle={IEEE Transactions on image processing},
-  year={20xx}
-}
+  @ARTICLE{l3fnet,
+  author={M. {Lamba} and K. K. {Rachavarapu} and K. {Mitra}},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Harnessing Multi-View Perspective of Light Fields for Low-Light Imaging}, 
+  year={2021},
+  volume={30},
+  pages={1501-1513},
+  doi={10.1109/TIP.2020.3045617}}
 </pre>
 </div>
 
