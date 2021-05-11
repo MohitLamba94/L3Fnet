@@ -8,7 +8,7 @@ Light Field (LF) offers unique advantages such as post-capture refocusing and de
 
 <p align="center">
   <a href="https://youtu.be/FXuQPQ6tKI4">
-  <img src="https://raw.githubusercontent.com/MohitLamba94/LLPackNet/master/pics/compariosn_overall.png" alt="Click to watch Demo Video" height="280">
+  <img src="https://raw.githubusercontent.com/MohitLamba94/L3Fnet/main/imgs/L3Fnet.png" alt="Click to watch Demo Video" height="280">
   </a>
 </p>
 
